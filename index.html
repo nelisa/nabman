@@ -20,7 +20,7 @@
     h1 .small { font-size: 0.4em; }
     h1 a { text-decoration: none }
     h2 { font-size: 1.5em; color: #ffffff; }
-    h3 { text-align: center; color: #00ff00; }
+    h3 { text-align: left; color: #ffffff; }
     a { color: #00ffff; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-weight: bold;}
     .download { float: right; }
@@ -42,25 +42,54 @@
         <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
     </div>
 
-    <h1><a href="http://github.com/nelisa/nabman">Nabman</a>
-      <span class="small">by <a href="http://github.com/nelisa">nelisa</a></span></h1>
+    <h1><a href="http://github.com/nelisa/nabman">Nabman</a></h1>
 
     <div class="description">
-      A QBasic game I wrote in 1998 :)  Wow, nostalgia...
+      A QBasic game I wrote in 1998
     </div>
 
-    <p>I made Nabman when I was about 14 years old.  At the time I'd had no formal programming training of any kind, which will probably become clear if you manage to get the game to run!  It was inspired by Pacman and Nibbles - another QBasic game quite similar to the Snake game that shipped with many Nokia phones around that time.  Needless to say it resembles neither, partly because I never got round to finishing it but mostly because it runs at a ridiculously fast pace (I didn't know how to implement timers properly!).</p><h2>Dependencies</h2>
-<p>QBASIC.EXE</p>
-<h2>Install</h2>
-<p>Copy all the files in the repository to "C:\nabman\".
+    <p>
+    I made Nabman when I was about 14 years old.  At the time I'd had no formal programming training of any kind.</p>
+    <p>It was loosely inspired by Pacman (at least at first) and lacked support for multiple ghost characters, internal walls, and a timer to control the pace of the game.  As a result the ghost moves around the level in random directions as quickly as your computer can manage.  This made the game extremely difficult to play so the player starts off with 10 lives, with one being deducted each time the ghost and player occupy the same tile.</p>
+    <p>The objective of the game is to get the smiley face from the top left of the screen to the bottom right, press space bar, and then return to the top left and press space bar again.  After hitting space bar in the bottom right corner, the player is rewarded with 10 additional lives to help them complete the return journey.  If the player succeeds, they are asked to enter their name in the 'High Scores' list.  However if they die, a skull-and-bones image scrolls across the screen to the tune of Beethoven's Symphony No. 5.</p>
+    <p>As you can tell from the 'Credits' screen, all graphic and audio artwork was created by me :)
+    </p>
+    
+    <video width="720px" height="540px" x-webkit-airplay="allow" controls>
+		<source src="nabman.mp4" type="video/mp4">
+		<source src="nabman.webm" type="video/webm">
+		<source src="nabman.ogv" type="video/ogv">
+    </video>
+    <small>Unfortunately this screencast does not have any sound</small>
+    
+    <p>
+    The source code has been uploaded for nostalgic and reference purposes only - it is no longer an active project.
+    </p>
+    <h2>Dependencies</h2>
+<ul>
+<li><a href="http://download.microsoft.com/download/win95upg/tool_s/1.0/w95/en-us/olddos.exe">QBASIC.EXE</a>
+<p>
+Definitely included with all versions of Microsoft Windows until (and including) Windows 98 ME.  If you don't have it, you can download it from the link above as part of the Windows 95 Extras CD-ROM.
+</p>
+</li>
+<li>
+<a href="http://www.dosbox.com/">DOSBox</a>
+<p>
+A DOS emulator - useful if you do not run Windows
+</p>
+</li>
+</ul>
 
-To start the game, run the MAIN.BAS file.</p>
+<h2>Install</h2>
+<p>
+Copy all the files in the repository to "C:\nabman\".  If you are using DOSBox, make sure you mount your filesystem such that "C:\nabman\" contains the source files.  Start up QBASIC.EXE, load MAIN.BAS and click [Run -> Start]
+</p>
 <h2>License</h2>
-<p>GPL</p>
-<h2>Authors</h2>
-<p>Nabil Elisa (nabs@houseofnab.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Nabil Elisa (nabs@houseofnab.com)<br/></p>
+<p><a href="http://www.gnu.org/licenses/gpl.html">GPL</a></p>
+<h2>Author / Contact</h2>
+<p>Nabil Elisa (<a href="mailto:nabs@houseofnab.com">nabs@houseofnab.com</a>)
+<br/>
+</p>
 
 
     <h2>Download</h2>
